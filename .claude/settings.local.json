@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/xxy42/**)",
+      "Read(//c/Users/xxy42/AppData/Roaming/Zotero/Zotero/Profiles/t4prwwha.default/**)",
+      "Bash(zotero-mcp-server --help)"
+    ]
+  },
+  "disabledMcpjsonServers": [
+    "zotero"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "site": {
+    "title": "ETNA",
+    "tagline": "源自自然，归于本真"
+  },
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "brand": "品牌",
+    "cases": "案例",
+    "colors": "色卡",
+    "contact": "联系"
+  },
+  "home": {
+    "heroCta": "探索产品",
+    "brandIntro": "品牌理念",
+    "brandIntroCta": "了解更多",
+    "featuredProducts": "明星产品",
+    "featuredProductsCta": "查看全部产品",
+    "colorInspiration": "色彩灵感",
+    "colorInspirationCta": "浏览色卡",
+    "realProjects": "实景案例",
+    "realProjectsCta": "更多案例"
+  },
+  "products": {
+    "all": "全部产品",
+    "noProducts": "暂无产品",
+    "category": "分类",
+    "specifications": "产品规格",
+    "availableColors": "可选色卡",
+    "features": "产品特性",
+    "relatedCases": "相关案例",
+    "viewDetail": "查看详情",
+    "backToList": "返回产品列表"
+  },
+  "brand": {
+    "title": "品牌故事",
+    "philosophy": "品牌理念",
+    "history": "发展历程",
+    "craft": "工艺传承"
+  },
+  "cases": {
+    "all": "全部案例",
+    "noCases": "暂无案例",
+    "spaceType": "空间类型",
+    "location": "地点",
+    "area": "面积",
+    "productsUsed": "使用产品",
+    "colorsUsed": "使用色卡",
+    "beforeAfter": "改造前后",
+    "viewDetail": "查看详情",
+    "backToList": "返回案例列表"
+  },
+  "colors": {
+    "title": "色彩体系",
+    "all": "全部色系",
+    "texturePreview": "材质预览",
+    "roomScene": "空间效果"
+  },
+  "contact": {
+    "title": "联系我们",
+    "phone": "电话",
+    "email": "邮箱",
+    "address": "地址",
+    "workingHours": "工作时间",
+    "followUs": "关注我们",
+    "buyOnline": "在线购买"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "加载失败",
+    "backToTop": "回到顶部",
+    "languageSwitch": "English"
+  },
+  "footer": {
+    "copyright": "© {year} ETNA 版权所有"
+  }
+}

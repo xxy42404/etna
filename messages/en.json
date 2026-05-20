@@ -1,0 +1,78 @@
+{
+  "site": {
+    "title": "ETNA",
+    "tagline": "Born from Nature, True to Essence"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "brand": "Brand",
+    "cases": "Projects",
+    "colors": "Colors",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroCta": "Explore Products",
+    "brandIntro": "Our Philosophy",
+    "brandIntroCta": "Learn More",
+    "featuredProducts": "Featured Products",
+    "featuredProductsCta": "View All Products",
+    "colorInspiration": "Color Inspiration",
+    "colorInspirationCta": "Browse Colors",
+    "realProjects": "Real Projects",
+    "realProjectsCta": "More Projects"
+  },
+  "products": {
+    "all": "All Products",
+    "noProducts": "No products available",
+    "category": "Category",
+    "specifications": "Specifications",
+    "availableColors": "Available Colors",
+    "features": "Features",
+    "relatedCases": "Related Projects",
+    "viewDetail": "View Details",
+    "backToList": "Back to Products"
+  },
+  "brand": {
+    "title": "Brand Story",
+    "philosophy": "Philosophy",
+    "history": "History",
+    "craft": "Craftsmanship"
+  },
+  "cases": {
+    "all": "All Projects",
+    "noCases": "No projects available",
+    "spaceType": "Space Type",
+    "location": "Location",
+    "area": "Area",
+    "productsUsed": "Products Used",
+    "colorsUsed": "Colors Used",
+    "beforeAfter": "Before & After",
+    "viewDetail": "View Details",
+    "backToList": "Back to Projects"
+  },
+  "colors": {
+    "title": "Color System",
+    "all": "All Families",
+    "texturePreview": "Texture Preview",
+    "roomScene": "Room Scene"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "workingHours": "Working Hours",
+    "followUs": "Follow Us",
+    "buyOnline": "Buy Online"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Failed to load",
+    "backToTop": "Back to Top",
+    "languageSwitch": "中文"
+  },
+  "footer": {
+    "copyright": "© {year} ETNA. All rights reserved."
+  }
+}
