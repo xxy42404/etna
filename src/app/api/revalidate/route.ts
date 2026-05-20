@@ -1,4 +1,4 @@
-import { revalidateTag } from 'next/cache';
+import { revalidatePath } from 'next/cache';
 import { type NextRequest, NextResponse } from 'next/server';
 import { parseBody } from 'next-sanity/webhook';
 
@@ -17,20 +17,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: 'Missing _type' }, { status: 400 });
     }
 
-    // Revalidate based on content type
-    switch (body._type) {
-      case 'siteSettings':
-      case 'product':
-      case 'productCategory':
-      case 'caseStudy':
-      case 'colorSwatch':
-      case 'colorFamily':
-      case 'page':
-        revalidateTag('sanity');
-        break;
-      default:
-        revalidateTag('sanity');
-    }
+    // Revalidate all pages when content changes
+    revalidatePath('/', 'layout');
 
     return NextResponse.json({ message: 'Revalidated', body });
   } catch (err) {

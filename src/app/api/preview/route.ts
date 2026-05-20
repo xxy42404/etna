@@ -1,11 +1,20 @@
-import { defineEnableDraftMode } from 'next-sanity/draft-mode';
+import { draftMode } from 'next/headers';
+import { redirect } from 'next/navigation';
 
-export const { GET } = defineEnableDraftMode({
-  clientConfig: {
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'placeholder',
-    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
-    apiVersion: '2025-05-20',
-    useCdn: false,
-    token: process.env.SANITY_API_READ_TOKEN,
-  },
-});
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const secret = searchParams.get('secret');
+  const redirectTo = searchParams.get('redirect') || '/';
+
+  if (secret !== process.env.SANITY_REVALIDATE_SECRET) {
+    return new Response('Invalid token', { status: 401 });
+  }
+
+  if (process.env.NEXT_PUBLIC_SANITY_PROJECT_ID === 'placeholder') {
+    return new Response('Sanity not configured', { status: 400 });
+  }
+
+  const store = await draftMode();
+  store.enable();
+  redirect(redirectTo);
+}

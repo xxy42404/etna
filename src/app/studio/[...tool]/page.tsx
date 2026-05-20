@@ -1,10 +1,22 @@
-import { NextStudio } from 'next-sanity/studio';
-import config from '@/../sanity.config';
+'use client';
 
-export const dynamic = 'force-static';
-
-export { metadata, viewport } from 'next-sanity/studio';
+import { useEffect, useState } from 'react';
+import type { ComponentType } from 'react';
 
 export default function StudioPage() {
-  return <NextStudio config={config} />;
+  const [Studio, setStudio] = useState<ComponentType | null>(null);
+
+  useEffect(() => {
+    import('./StudioComponent').then((mod) => setStudio(() => mod.default));
+  }, []);
+
+  if (!Studio) {
+    return (
+      <div className="flex items-center justify-center h-screen text-neutral-500">
+        Loading Studio...
+      </div>
+    );
+  }
+
+  return <Studio />;
 }
