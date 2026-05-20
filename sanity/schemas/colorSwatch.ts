@@ -1,3 +1,4 @@
+import { createElement } from 'react';
 import { defineType, defineField } from 'sanity';
 
 export const colorSwatch = defineType({
@@ -90,14 +91,14 @@ export const colorSwatch = defineType({
       return {
         title: title || 'Untitled',
         subtitle,
-        media: () => (
-          <div style={{
+        media: () => createElement('div', {
+          style: {
             width: '100%',
             height: '100%',
             backgroundColor: subtitle || '#ccc',
             borderRadius: '50%',
-          }} />
-        ),
+          },
+        }),
       };
     },
   },
